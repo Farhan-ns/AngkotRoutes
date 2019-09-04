@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="EasyWay" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Green A200 - Light Blue A200 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="bottomNavigationBarStyle" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/tintOverlayGray</item>
+    </style>
+
+</resources>

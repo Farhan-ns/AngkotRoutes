@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Routes</string>
+
+    <string name="navigation_maps">Maps</string>
+    <string name="navigation_recent">Recent</string>
+    <string name="navigation_favorite">Favorite</string>
+</resources>

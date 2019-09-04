@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2bbd7e</color>
+    <color name="colorPrimaryDark">#128D5C</color>
+    <color name="colorPrimaryLight">#9fffe0</color>
+    <color name="colorAccent">#40c4ff</color>
+
+    <color name="colorSecondary">#40c4ff</color>
+    <color name="colorSecondaryDark">#0094cc</color>
+    <color name="colorSecondaryLight">#82f7ff</color>
+
+    <color name="bottomNavIconColor">#2bbd7e</color>
+    <color name="bottomNavBgColor">#fafafa</color>
+
+    <color name="tintOverlayGray">#BDBDBD</color>
+    <color name="colorWhite">#fafafa</color>
+</resources>
