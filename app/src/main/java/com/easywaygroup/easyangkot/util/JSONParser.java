@@ -1,4 +1,4 @@
-package com.acer.angkotroutes.util;
+package com.easywaygroup.easyangkot.util;
 
 import android.content.Context;
 

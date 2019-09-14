@@ -11,11 +11,11 @@
         android:theme="@style/EasyWay">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAqTaqKwwe5gv-ewKikNzeD3_O6eh3xlzc"/>
+            android:value="AIzaSyBmj6UQejpAHRLlwHZzJJSTs9TBIlj0Ptc" />
 
-        <activity android:name=".nav.FavoriteActivity" />
-        <activity android:name=".nav.RecentActivity" />
-        <activity android:name=".nav.MainActivity">
+        <activity android:name="com.easywaygroup.easyangkot.nav.FavoriteActivity" />
+        <activity android:name="com.easywaygroup.easyangkot.nav.RecentActivity" />
+        <activity android:name="com.easywaygroup.easyangkot.nav.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

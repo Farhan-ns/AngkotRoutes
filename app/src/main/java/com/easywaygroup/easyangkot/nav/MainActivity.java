@@ -1,4 +1,4 @@
-package com.acer.angkotroutes.nav;
+package com.easywaygroup.easyangkot.nav;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -9,15 +9,21 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import com.acer.angkotroutes.R;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
-    Toolbar toolbar;
-    BottomNavigationView bottomNav;
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     BottomSheetBehavior bottomSheet;
+    SupportMapFragment mapFragment;
+    BottomNavigationView bottomNav;
+    FloatingActionButton fabRoutes;
+    GoogleMap googleMap;
     Fragment fragment;
+    Toolbar toolbar;
 
     int stateExpanded = BottomSheetBehavior.STATE_EXPANDED;
     int stateCollapsed = BottomSheetBehavior.STATE_COLLAPSED;
@@ -26,21 +32,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initComponents();
 
-        toolbar = findViewById(R.id.view_toolbar);
-        setSupportActionBar(toolbar);
-
-        bottomNav = findViewById(R.id.view_bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavListener());
 
-        FloatingActionButton fabRoutes = findViewById(R.id.fab_show_routes);
+        fabRoutes = findViewById(R.id.fab_show_routes);
         fabRoutes.setOnClickListener(new FABListener());
 
-        fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_show_routes);
-
-        View coordinatorLayout = findViewById(R.id.fragment_show_routes);
-        bottomSheet = BottomSheetBehavior.from(coordinatorLayout);
         bottomSheet.setState(BottomSheetBehavior.STATE_HIDDEN);
+
+        mapFragment.getMapAsync(this);
     }
 
     @Override
@@ -50,6 +51,22 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        this.googleMap = googleMap;
+    }
+
+    private void initComponents() {
+        bottomNav = findViewById(R.id.view_bottom_navigation);
+
+        fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_show_routes);
+
+        View coordinatorLayout = findViewById(R.id.fragment_show_routes);
+        bottomSheet = BottomSheetBehavior.from(coordinatorLayout);
+
+        mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_map);
     }
 
     private void expandBottomSheet() {

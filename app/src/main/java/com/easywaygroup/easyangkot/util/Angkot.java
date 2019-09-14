@@ -1,4 +1,4 @@
-package com.acer.angkotroutes.util;
+package com.easywaygroup.easyangkot.util;
 
 public class Angkot {
 

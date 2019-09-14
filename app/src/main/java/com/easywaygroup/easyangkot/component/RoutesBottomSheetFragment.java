@@ -1,4 +1,4 @@
-package com.acer.angkotroutes.component;
+package com.easywaygroup.easyangkot.component;
 
 
 import android.content.Context;
@@ -16,8 +16,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.acer.angkotroutes.R;
-import com.acer.angkotroutes.util.Angkot;
-import com.acer.angkotroutes.util.JSONParser;
+import com.easywaygroup.easyangkot.util.Angkot;
+import com.easywaygroup.easyangkot.util.JSONParser;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
