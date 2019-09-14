@@ -10,5 +10,34 @@
   {
     "nama_jurusan": "Elang-Gedebage",
     "nama_gambar" : "angkot_elang_gedebage"
+  },
+  {
+    "nama_jurusan" : "Abdul Muis-Elang",
+    "nama_gambar"  : "angkot_abdul_muis_elang"
+  },
+  {
+    "nama_jurusan" : "Banjaran-Tegalega",
+    "nama_gambar"  : "angkot_banjaran_tegalega"
+  },
+  {
+    "nama_jurusan" : "Cicaheum-Leuwi Panjang",
+    "nama_gambar"  : "angkot_cicaheum_leuwi_panjang"
+  },
+  {
+    "nama_jurusan" : "Mahmud-Tegalega",
+    "nama_gambar"  : "angkot_mahmud_tegalega"
+  },
+  {
+    "nama_jurusan" : "Ciroyom-Cikudapateuh",
+    "nama_gambar"  : "angkot_ciroyom_cikudapateuh"
+  },
+  {
+    "nama_jurusan" : "Kalapa-Dayeuh Kolot",
+    "nama_gambar"  : "angkot_kalapa_kolot"
+  },
+  {
+    "nama_jurusan" : "Cicaheum-Cibaduyut",
+    "nama_gambar"  : "angkot_kalapa_cibaduyut"
   }
+
 ]

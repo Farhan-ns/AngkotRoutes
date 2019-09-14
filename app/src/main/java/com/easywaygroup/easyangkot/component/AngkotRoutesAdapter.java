@@ -1,4 +1,4 @@
-package com.acer.angkotroutes.component;
+package com.easywaygroup.easyangkot.component;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,7 +15,7 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.acer.angkotroutes.R;
-import com.acer.angkotroutes.util.Angkot;
+import com.easywaygroup.easyangkot.util.Angkot;
 
 import java.util.List;
 
