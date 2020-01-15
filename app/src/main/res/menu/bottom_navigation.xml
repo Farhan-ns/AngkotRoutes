@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_favorite"
-        android:icon="@drawable/ic_star_black_36dp"
-        android:title="@string/navigation_favorite"/>
-
-    <item
         android:id="@+id/navigation_maps"
         android:icon="@drawable/ic_navigation_black_36dp"
         android:checked="true"
         android:title="@string/navigation_maps"/>
 
     <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_star_black_36dp"
+        android:title="@string/navigation_settings"/>
+
+    <item
         android:id="@+id/navigation_recent"
         android:icon="@drawable/ic_beenhere_black_36dp"
-        android:title="@string/navigation_recent"/>
+        android:title="@string/navigation_about"/>
 </menu>

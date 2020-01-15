@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         fabRoutes.setOnClickListener(new FABListener());
 
         bottomSheet.setState(BottomSheetBehavior.STATE_HIDDEN);
+        bottomSheet.setHideable(true);
 
         mapFragment.getMapAsync(this);
     }
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        googleMap.setPadding(0, 0, 0, 250);
         this.googleMap = googleMap;
     }
 
@@ -82,13 +84,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         public boolean onNavigationItemSelected(MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_favorite:
-                    toolbar.setTitle("Favorite");
+
                     return true;
                 case R.id.navigation_maps:
-                    toolbar.setTitle("Maps");
+
                     return true;
                 case R.id.navigation_recent:
-                    toolbar.setTitle("Recent");
+
                     return true;
             }
             return false;
