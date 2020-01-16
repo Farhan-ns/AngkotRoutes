@@ -13,7 +13,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBmj6UQejpAHRLlwHZzJJSTs9TBIlj0Ptc" />
 
-        <activity android:name="com.easywaygroup.easyangkot.nav.FavoriteActivity" />
+        <activity android:name="com.easywaygroup.easyangkot.nav.AboutActivity" />
         <activity android:name="com.easywaygroup.easyangkot.nav.RecentActivity" />
         <activity android:name="com.easywaygroup.easyangkot.nav.MainActivity">
             <intent-filter>
