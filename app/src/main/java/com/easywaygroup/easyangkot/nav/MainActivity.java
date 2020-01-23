@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.acer.angkotroutes.R;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     GoogleMap googleMap;
     Fragment fragment;
     Toolbar toolbar;
+    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle togel;
 
     int stateExpanded = BottomSheetBehavior.STATE_EXPANDED;
     int stateCollapsed = BottomSheetBehavior.STATE_COLLAPSED;
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         bottomSheet.setState(BottomSheetBehavior.STATE_HIDDEN);
         bottomSheet.setHideable(true);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
 
         mapFragment.getMapAsync(this);
     }
