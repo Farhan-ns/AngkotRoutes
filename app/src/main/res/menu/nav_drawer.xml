@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" />
+    <item
+        android:id="@+id/nav_trayek"
+        android:checked="true"
+        android:icon="@drawable/ic_airport_shuttle_black_36dp"
+        android:title="Trayek" />
+
+
+    <item
+        android:id="@+id/navigation_maps"
+        android:checked="true"
+        android:icon="@drawable/ic_navigation_black_36dp"
+        android:title="Maps" />
+
+    <item
+        android:id="@+id/support"
+        android:checked="true"
+        android:title="Support">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_help"
+                android:checked="true"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:checked="true"
+                android:icon="@drawable/ic_error_black_24dp"
+                android:title="About" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:checked="true"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="Give us Feedback" />
+        </menu>
+    </item>
+
+    <group />
+</menu>
