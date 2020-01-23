@@ -21,11 +21,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Easy Way"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bagus"/>
+            android:text="Bagus"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"/>
     </LinearLayout>
 </FrameLayout>
