@@ -32,13 +32,6 @@
             android:src="@drawable/ic_directions_black_36dp"
             android:tint="@color/colorWhite" />
 
-        <!--<include-->
-            <!--android:id="@+id/view_bottom_navigation"-->
-            <!--layout="@layout/view_bottom_navigation"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="bottom" />-->
-
         <fragment
             android:id="@+id/fragment_show_routes"
             android:name="com.easywaygroup.easyangkot.component.RoutesBottomSheetFragment"

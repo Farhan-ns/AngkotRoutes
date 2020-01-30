@@ -19,9 +19,9 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+    //BottomNavigationView bottomNav;
     BottomSheetBehavior bottomSheet;
     SupportMapFragment mapFragment;
-    BottomNavigationView bottomNav;
     FloatingActionButton fabRoutes;
     GoogleMap googleMap;
     Fragment fragment;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
         initComponents();
 
-        bottomNav.setOnNavigationItemSelectedListener(new BottomNavListener());
+        //bottomNav.setOnNavigationItemSelectedListener(new BottomNavListener());
 
         fabRoutes = findViewById(R.id.fab_show_routes);
         fabRoutes.setOnClickListener(new FABListener());
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void initComponents() {
-        bottomNav = findViewById(R.id.view_bottom_navigation);
+        //bottomNav = findViewById(R.id.view_bottom_navigation);
 
         fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_show_routes);
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         bottomSheet.setState(stateCollapsed);
     }
 
-    private class BottomNavListener implements BottomNavigationView.OnNavigationItemSelectedListener {
+    /*private class BottomNavListener implements BottomNavigationView.OnNavigationItemSelectedListener {
         @Override
         public boolean onNavigationItemSelected(MenuItem item) {
             switch (item.getItemId()) {
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             return false;
         }
     }
-
+*/
     private class FABListener implements FloatingActionButton.OnClickListener {
 
         @Override

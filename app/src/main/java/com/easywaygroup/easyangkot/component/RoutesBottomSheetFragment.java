@@ -70,7 +70,7 @@ public class RoutesBottomSheetFragment extends Fragment {
                         Snackbar.LENGTH_SHORT
                 );
                 CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) snackbar.getView().getLayoutParams();
-                layoutParams.setAnchorId(R.id.view_bottom_navigation);
+                //layoutParams.setAnchorId(R.id.view_bottom_navigation);
                 layoutParams.anchorGravity = Gravity.TOP;
                 layoutParams.gravity = Gravity.TOP;
                 snackbar.getView().setLayoutParams(layoutParams);
