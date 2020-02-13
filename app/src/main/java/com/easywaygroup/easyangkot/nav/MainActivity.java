@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle togel;
-
+    NavigationView navigationView;
     GoogleMap googleMap;
     SupportMapFragment mapFragment;
     LocationManager location;
@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         drawerLayout = findViewById(R.id.drawer_layout);
 
         mapFragment.getMapAsync(this);
+
+        navigationView = findViewById(R.id.navigationview);
     }
 
     @SuppressLint("MissingPermission")
@@ -87,6 +89,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         location = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         location.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME, MIN_DISTANCE, this);
+
+        navigationView.setNavigationItemSelectedListener(new NavListener());
+
+
     }
 
     @Override
