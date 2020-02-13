@@ -185,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     break;
                 case R.id.nav_about:
                     Intent intent_about = new Intent(context, AboutActivity.class);
+                    startActivity(intent_about);
                     break;
                 case R.id.nav_feedback:
                     Intent intent_feedback = new Intent(context, FeedBackActivity.class);
