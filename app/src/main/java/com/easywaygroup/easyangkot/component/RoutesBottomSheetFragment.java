@@ -12,12 +12,15 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.acer.angkotroutes.R;
+import com.easywaygroup.easyangkot.nav.MainActivity;
 import com.easywaygroup.easyangkot.util.Angkot;
 import com.easywaygroup.easyangkot.util.JSONParser;
+import com.easywaygroup.easyangkot.util.RouteListener;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
@@ -62,23 +65,30 @@ public class RoutesBottomSheetFragment extends Fragment {
         adapter.setListener(new AngkotRoutesAdapter.Listener() {
             @Override
             public void onClick(int position) {
-                int pos = position + 1;
-                CharSequence sequence = "Card " + pos + " Clicked";
-                Snackbar snackbar = Snackbar.make(
-                        Objects.requireNonNull(getActivity()).findViewById(R.id.coordinator_layout),
-                        sequence,
-                        Snackbar.LENGTH_SHORT
-                );
-                CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) snackbar.getView().getLayoutParams();
-                //layoutParams.setAnchorId(R.id.view_bottom_navigation);
-                layoutParams.anchorGravity = Gravity.TOP;
-                layoutParams.gravity = Gravity.TOP;
-                snackbar.getView().setLayoutParams(layoutParams);
-                snackbar.show();
+                RouteListener rtListener = (RouteListener) getActivity();
+                rtListener.showRoute();
+
+                showSnackbarDebug(position);
             }
         });
 
         return linearLayout;
+    }
+
+    private void showSnackbarDebug(int position) {
+        int pos = position + 1;
+        CharSequence sequence = "Card " + pos + " Clicked";
+        Snackbar snackbar = Snackbar.make(
+                Objects.requireNonNull(getActivity()).findViewById(R.id.coordinator_layout),
+                sequence,
+                Snackbar.LENGTH_SHORT
+        );
+        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) snackbar.getView().getLayoutParams();
+        //layoutParams.setAnchorId(R.id.view_bottom_navigation);
+        layoutParams.anchorGravity = Gravity.TOP;
+        layoutParams.gravity = Gravity.TOP;
+        snackbar.getView().setLayoutParams(layoutParams);
+        snackbar.show();
     }
 
     private List<Angkot> getAngkotListFromJSON() {

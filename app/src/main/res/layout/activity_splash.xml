@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#11B461"
     tools:context="com.easywaygroup.easyangkot.nav.SplashActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/company_logo"/>
+        android:layout_width="410dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo"/>
 
     <ProgressBar
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
