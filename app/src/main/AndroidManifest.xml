@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/EasyWay">
+        <activity android:name=".activity_feedback"></activity>
         <activity android:name="com.easywaygroup.easyangkot.nav.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +25,7 @@
 
         <activity android:name="com.easywaygroup.easyangkot.nav.AboutActivity" />
         <activity android:name="com.easywaygroup.easyangkot.nav.RecentActivity" />
-        <activity android:name="com.easywaygroup.easyangkot.nav.MainActivity">
-
-        </activity>
+        <activity android:name="com.easywaygroup.easyangkot.nav.MainActivity"></activity>
     </application>
 
 </manifest>

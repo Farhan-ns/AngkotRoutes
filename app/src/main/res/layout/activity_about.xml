@@ -7,70 +7,99 @@
     tools:context="com.easywaygroup.easyangkot.nav.AboutActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round"
-        android:layout_marginTop="160dp"
-        android:layout_gravity="center_horizontal"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Easy Way Group"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        android:layout_marginTop="10dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Team :"
+        android:text="CEO"
         android:textColor="#000000"
-        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Bagus Tito"
         android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Front End"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Bagus Tito"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Back End"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Farhan N.S"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Desain"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="Alpa Gustiana"
-        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
+        android:text="M.Indra Gunawan"
         android:textColor="#000000"
-        android:text="Bagus Tito Hindarto"
-        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:textColor="#000000"
-        android:text="Farhanunnasih"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:textColor="#000000"
-        android:text="M. Indra Gunawan"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:text="v1.0.0"
-        android:textColor="#000000"
+        android:textColor="#95a5a6"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 </LinearLayout>

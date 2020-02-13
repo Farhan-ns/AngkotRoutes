@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_feedback">
+
+    <TextView
+        android:id="@+id/Masalah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="FeedBack"
+        android:textColor="#27ae60"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Masalah"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:text="Masalah"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="133dp" />
+
+    <TextView
+        android:id="@+id/kotak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Masalah"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="300dp"
+        android:text="Saran"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="133dp"
+        android:layout_marginLeft="270dp"/>
+
+    <ImageView
+        android:id="@+id/miring"
+        android:layout_width="370dp"
+        android:layout_height="280dp"
+        android:src="@drawable/kotak"
+        android:layout_below="@id/kotak"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jelaskan Masalah Yang Anda Hadapi?"
+        android:layout_below="@id/kotak"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:id="@+id/sip"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:src="@drawable/kotak"
+        android:layout_below="@id/miring"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon / Email"
+        android:layout_below="@id/miring"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/oke"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/kotak"
+        android:layout_below="@id/sip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_below="@id/sip"
+        android:textStyle="bold"
+        android:textColor="#27ae60"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>
