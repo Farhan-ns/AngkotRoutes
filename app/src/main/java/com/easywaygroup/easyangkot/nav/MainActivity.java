@@ -1,9 +1,13 @@
 package com.easywaygroup.easyangkot.nav;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -17,6 +21,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     //BottomNavigationView bottomNav;
@@ -31,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     int stateExpanded = BottomSheetBehavior.STATE_EXPANDED;
     int stateCollapsed = BottomSheetBehavior.STATE_COLLAPSED;
+
+    Context context = this;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +83,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         bottomSheet = BottomSheetBehavior.from(coordinatorLayout);
 
         mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_map);
+        navigationView = findViewById(R.id.navigationview);
+        navigationView.setNavigationItemSelectedListener(new NavListener());
     }
 
     private void expandBottomSheet() {
@@ -111,7 +121,33 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 collapseBottomSheet();
             } else {
                 expandBottomSheet();
+
             }
+        }
+    }
+    private class NavListener implements NavigationView.OnNavigationItemSelectedListener{
+
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            switch (menuItem.getItemId()) {
+
+                case R.id.nav_trayek:
+                    Intent intent_trayek = new Intent(context, MainActivity.class);
+                    break;
+                case R.id.navigation_maps:
+                    Intent intent_maps = new Intent(context, MainActivity.class);
+                    break;
+                case  R.id.nav_help:
+                    break;
+                case R.id.nav_about:
+                    Intent intent_about = new Intent(context, AboutActivity.class);
+                    break;
+                case R.id.nav_feedback:
+                    Intent intent_feedback = new Intent(context, FeedBackActivity.class);
+                    break;
+            }
+            return false;
         }
     }
 

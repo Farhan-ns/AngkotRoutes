@@ -28,7 +28,7 @@
         android:layout_marginTop="3dp"
         android:text="Bagus Tito"
         android:textColor="#000000"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 
     <TextView
@@ -46,7 +46,7 @@
         android:layout_marginTop="3dp"
         android:text="Bagus Tito"
         android:textColor="#000000"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 
     <TextView
@@ -62,9 +62,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:text="Farhan N.S"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Farhanunnasih"
         android:textColor="#000000"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 
     <TextView
@@ -82,7 +83,7 @@
         android:layout_marginTop="3dp"
         android:text="Alpa Gustiana"
         android:textColor="#000000"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 
     <TextView
@@ -91,7 +92,7 @@
         android:layout_marginTop="3dp"
         android:text="M.Indra Gunawan"
         android:textColor="#000000"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:layout_gravity="center"/>
 
     <TextView
